@@ -69,6 +69,7 @@ public class JobProcessor implements PageProcessor {
         jobInfo.setCompanyAddr(Jsoup.parse(html.css("div.bmsg").nodes().get(1).toString()).text());
         jobInfo.setCompanyInfo(Jsoup.parse(html.css("div.tmsg").toString()).text());
         jobInfo.setCompanyName(html.css("div.cn p.cname a", "text").toString());
+        //工作地址和公司地址一样
         jobInfo.setJobAddr(Jsoup.parse(html.css("div.bmsg").nodes().get(1).toString()).text());
         jobInfo.setJobInfo(Jsoup.parse(html.css("div.job_msg").toString()).text());
         jobInfo.setJobName(html.css("div.in div.cn h1", "text").toString());
