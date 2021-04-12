@@ -32,7 +32,7 @@ public class JobProcessor implements PageProcessor {
 
     @Override
     public void process(Page page) {
-        System.out.println(55);
+        System.out.println(55666);
         //在downpage启动，就已经把html下载好
         //通过page得到html,获取所有的节点
         List<Selectable> nodes = page.getHtml().css("div#resultList div.el").nodes();
